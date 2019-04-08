@@ -1,0 +1,103 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-profile {
+    width: 20rem;
+    border-radius: 50%;
+    border: 2px solid #d2fcec;
+    transition: all 1.5s;
+}
+
+.img-profile:hover {
+    transform: scale(1.1);
+    border: 3px solid #05d584;
+}
+
+.header-name {
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.header-name:hover {
+    color: #05d584;
+    transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 372px) {
+    .header-name {
+        font-size: 2rem;
+    }
+}
+
+.links-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.link-text {
+    color: #000000;
+    font-size: 1.6rem;
+    margin-top: .8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    padding: 2.5rem;
+    margin: .8rem;
+    transition: all 1.2s;
+}
+
+a:link {
+    list-style: none;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #d2fcec;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 0 .2rem #05d584;
+}
+
+
+footer {
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    margin-bottom: 5vh;
+}
