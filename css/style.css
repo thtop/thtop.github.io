@@ -17,7 +17,6 @@ body {
 }
 
 .container {
-    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -27,13 +26,23 @@ body {
 .img-profile {
     width: 20rem;
     border-radius: 50%;
-    border: 2px solid #d2fcec;
+    border: 2px solid #05d584;
     transition: all 1.5s;
 }
 
 .img-profile:hover {
     transform: scale(1.1);
-    border: 3px solid #05d584;
+    border: 3px solid #d2fcec;
+}
+
+header {
+    width: 100%;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #d2fcec;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 77% 94%, 50% 100%, 20% 94%, 0 100%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 100%, 77% 94%, 50% 100%, 20% 94%, 0 100%, 0 0);
+
 }
 
 .header-name {
@@ -46,10 +55,6 @@ body {
     transition: all 1s;
 }
 
-.header-name:hover {
-    color: #05d584;
-    transform: scale(1.1); 
-}
 
 @media only screen and (max-width: 372px) {
     .header-name {
@@ -95,6 +100,209 @@ a:link {
     box-shadow: 0 0 0 .2rem #05d584;
 }
 
+/* SKILL */
+.skill-container {
+    width: 80%;
+    font-size: 1.6rem;
+    padding-bottom: 5rem;
+}
+
+.skill-container h2 {
+    margin-top: 3rem;
+}
+
+.skill {
+    margin-top: 2.5rem;
+}
+
+.skill-text {
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-percentage {
+    background-color: #d2fcec;
+    padding: 4px;
+    border: 1px solid #05d584;
+    border-radius: 6px;
+}
+
+.skill-value {
+    background-color: #05d584;
+    height: 15px;
+    border-radius: 6px;
+}
+
+.skill-value--html {
+    width: 89%;
+    animation: html 2s;
+}
+
+.skill-value--css {
+    width: 95%;
+    animation: css 2s;
+}
+
+.skill-value--js {
+    width: 85%;
+    animation: js 2s;
+}
+
+.skill-value--sass {
+    width: 75%;
+    animation: sass 2s;
+}
+
+.skill-value--npm {
+    width: 75%;
+    animation: npm 2s;
+}
+
+.skill-value--webpack {
+    width: 50%;
+    animation: webpack 2s;
+}
+
+.skill-value--gulp {
+    width: 50%;
+    animation: gulp 2s;
+}
+
+.skill-value--jquery {
+    width: 60%;
+    animation: jquery 2s;
+}
+
+.skill-value--api {
+    width: 70%;
+    animation: api 2s;
+}
+
+.skill-value--wp {
+    width: 75%;
+    animation: wp 2s;
+}
+
+.skill-value--node {
+    width: 0%;
+    animation: node 2s;
+}
+
+.skill-value--react {
+    width: 0%;
+    animation: react 2s;
+}
+
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 89%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes sass {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes npm {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes webpack {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes gulp {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes jquery {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes api {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes wp {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes node {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 0%;
+    }
+}
 
 footer {
     font-size: 1.4rem;
